@@ -4,8 +4,8 @@ def rep_char(shape, num):
     print(shape * int(num))
 
 def draw_line_string(msg):
-    msg1 = 'hello {}'.format(msg)
-    msg2 = 'welcome to seoul'
+    msg1 = 'hello {} ,'.format(msg)
+    msg2 = 'welcome to seoul.'
     if len(msg1) >= len(msg2) :
         length = len(msg1) + 2
     else :
