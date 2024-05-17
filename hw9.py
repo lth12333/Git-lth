@@ -4,7 +4,7 @@ class Point:
         self.__y = y
 
     def show(self):
-        print(f'({self.__x},{self.__y})', end = '')
+        print(f'({self.__x},{self.__y})')
 
     def set(self, x, y):
         self.__x = x
@@ -20,15 +20,13 @@ class Rectangle:
         self.rb = Point(x2, y2)
 
     def show(self):
-        print('좌측 상단 꼭지점이 ', end = '')
-        self.lt.show()
-        print('이고 우측 하단 꼭지점이 ', end = '')
-        self.rb.show()
-        print('인 사각형입니다.', end = '')
+        x2, y2 = self.rb.get()
+        x1, y1 = self.lt.get()
+        print(f'좌측 상단 꼭지점이 ({x1},{y1})이고 우측 하단 꼭지점이 ({x2},{y2})인 사각형입니다.', end = '')
 
     def getWidth(self):
-        x2, y2 = rb.get()
-        x1, y1 = lt.get()
+        x2, y2 = self.rb.get()
+        x1, y1 = self.lt.get()
         x = x2 - x1
         return x
 
