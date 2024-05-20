@@ -34,6 +34,7 @@ class Rectangle:
         x2, y2 = self.rb.get()
         x1, y1 = self.lt.get()
         y = y2 - y1
+        return y
 
     def getArea(self):
         x2, y2 = self.rb.get()
